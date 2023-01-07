@@ -1,0 +1,139 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="894,1068" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="476,1003" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Motherson 1" sap:VirtualizedContainerService.HintSize="434,915" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="d6ec7f1a-c13c-421a-9252-b8069db95fcd" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,698" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'MTSL'" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d6ec7f1a-c13c-421a-9252-b8069db95fcd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://one.motherson.com/SitePages/main.aspx#monepage[1,1]" DesignTimeRectangle="12, 162, 72, 19" DesignTimeScaleFactor="1" FriendlyName="'MTSL'" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='MTSL' check:innerText='MTSL' /&gt;" Guid="70033030-f574-4c03-bcda-10619a814fc9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAXCAYAAACh3qkfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKpSURBVFhH7ZdBa+JAFMf3o239GPHu3rWH3V637sWTQvFkQVpYGigUJC6FQEEoBAo5LAwsCqJQDCwMLASEgPD6Jr7MvGhkN3T0snnwB/Mm8+L8nPnn+eHsYw0q/bsqYCVVASupClhJVcBK6gjAuhD+ARNxCH0+Xn+A6YbGVMzH4M3p84FYPbXg7FMX/F8SYjY3jkK4++ro2rrOZgZ3/JkWdQRgY1jQ905jB9jnp4gGtiGffQhjuiiMGMIfWDOhy91IEE5d1e6bOtEEmuyZNmUf2FWIS+SxBE+PD0CsKU0xdc1c59HA5PnBz4xWDGLYAqfeBv+VUgroFd53PoEVZRJxq+falnVgfNHbMMCc+xnlsohgcm7m3ogMDM+zI74WcEP3Xo4ELOZLlADvG+ZcU3v1aI6pbVkHphcdS5Cp3+AO6KmxDgRSXScgZXYPP65tGt/NO+AtKa8iXsJk2AZHj2/Vfcn2dfa848gysBZMsg0WCRDpGujIXAtEhSExn4F59dnCmfctx6wm6qLAw9YRhN+/6Hs01CMavpJlYK5+AybC1T4zdVvm84OvwcRh38ztGe+LX7qsJkm9Jed5d1S7dTHCNyg3fBnA5e5ci7ILjC1aPrf1a34RBJBuKlxMZ0g7DWMxMnMPGf6eEJyH7YUOBehEhq9kF9jImI2C0c9+dtp103uHeY2EQJk1zS02/Bo03TBv7mme7SjldycyfCWrwDQggtHkPVdq5I5pB3Jec8jweU2E4XeggbnGNWtdZu7JDF/JIrACGGO248bKa25NH5ZrLo335V8EqL2+jkWCLcsFM/yCUNZgvuP7ZRFYAYxssdg/DdT1Ia/5i+E3ej5MfzNsmwS7i4D+FrHjuRcJNrr5Wu+VXQ/7D1QBK6kKWElVwEqqAlZSFbBSqsEbCsJmOdBhMDUAAAAASUVORK5CYII=" InformativeScreenshot="cc58f7f20c2fc46881f03e8759b926cc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Motherson 1' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'page tab'" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d6ec7f1a-c13c-421a-9252-b8069db95fcd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="290, 8, 248, 33" DesignTimeScaleFactor="1" ElementType="TabPage" FriendlyName="'page tab'" FullSelectorArgument="&lt;ctrl name='Motherson 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl idx='2' name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='Welcome to MTSL Intranet!' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Motherson 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='Welcome to MTSL Intranet!' role='page tab' automationid='' /&gt;" Guid="d931381b-b44f-4779-b121-6399d1a1958e" ImageBase64="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" InformativeScreenshot="7c06824db2b078a9546ac6e113f905c7.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Motherson 1 and 1 more page - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="358,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="358,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://mtsl.mothersontechnology.com/MTSL/General/MTSL%20NCR%20Calendar%202022.pdf" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPY0AGL+RU+YG4HojvA/F/JPweiOcDsTxUKSYASvpDFSJrxIbjoVoQACgI0oxNMS6MMATIATkbq81vw6L/f1u19v8rKwcMOSDWhxkA8jOK5Ieisv8/j534DwMgg9DVAPF6mAHoAfb/15VrUK0QgMMAEOYHGYAh8amhBcUFOLwAwvZYDQDhz32ToNr/Y5WHYuoYgDUGiDQAHAagFIYhSYQB+2GxII8mAcZEGGAPNgAEgJx4NElwyIOiD0cU9kO1IgBQEMMQHBhTMwwAJfWBeD2SYmS8H4gRzsYHgApB+cMeCfNDpdAAAwMAw3nevfxASl0AAAAASUVORK5CYII=" InformativeScreenshot="083408f542debd380512699106a2cc66.jpg" Selector="&lt;html app='msedge.exe' title='Motherson 1' /&gt;" Url="https://one.motherson.com/SitePages/main.aspx#monepage[1,1]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
